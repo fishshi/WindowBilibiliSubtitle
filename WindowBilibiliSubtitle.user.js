@@ -27,7 +27,7 @@
 						if (subtitleSpan) {
 							console.log('字幕更新:', subtitleSpan.textContent);
 							if (ws.readyState === WebSocket.OPEN) {
-								ws.send(encodeURIComponent(subtitleSpan.textContent));
+								ws.send(subtitleSpan.textContent);
 							}
 						}
 					}
